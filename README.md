@@ -16,13 +16,13 @@ En general, el usuario interactúa con la aplicación de esta forma:
 
 ## ¿Qué puede hacer el usuario?
 
-Consultar usuarios
+###Consultar usuarios
 El usuario puede visualizar los perfiles registrados en SoundWave y conocer la información mostrada de cada uno.
 
-Consultar artistas
+###Consultar artistas
 El usuario puede conocer los artistas incluidos en la aplicación y la información disponible sobre ellos, como su nombre y género musical.
 
- Consultar álbumes
+ ###Consultar álbumes
 El usuario puede visualizar los álbumes disponibles y consultar los datos que muestra la aplicación, como el nombre, el año de lanzamiento y la cantidad de canciones.
 
 ### Ver playlists
