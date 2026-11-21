@@ -1,0 +1,29 @@
+SOUNDWAVE - VERSION CON INTERFAZ GRAFICA PARA NETBEANS
+
+IMPORTANTE
+- Este proyecto conserva las clases y la base de datos SQLite originales.
+- Se agregó src/main/java/com/mycompany/soundwave/ui/MainFrame.java.
+- SoundWave.java ahora inicializa SQLite y abre la ventana gráfica.
+- La interfaz consulta las canciones mediante CancionDAO y CancionDAOjdbc.
+- El botón "Registrar reproducción" incrementa el contador en SQLite. No reproduce audio real.
+
+ABRIR EN NETBEANS
+1. Descomprime la carpeta del proyecto.
+2. En NetBeans elige File > Open Project.
+3. Selecciona la carpeta SoundWave 1.2, la que contiene pom.xml.
+4. Espera a que Maven resuelva la dependencia sqlite-jdbc.
+5. Haz clic derecho en el proyecto > Clean and Build.
+6. Haz clic derecho en SoundWave.java > Run File, o ejecuta el proyecto.
+
+ARCHIVOS IMPORTANTES
+- src/main/java/com/mycompany/soundwave/ui/MainFrame.java : ventana y eventos.
+- src/main/java/com/mycompany/soundwave/CancionDAO.java : contrato de consultas.
+- src/main/java/com/mycompany/soundwave/CancionDAOjdbc.java : SQL de búsqueda y reproducciones.
+- src/main/java/com/mycompany/soundwave/db/ConexionDB.java : conexión SQLite.
+- src/main/java/com/mycompany/soundwave/db/InicializadorDB.java : crea tablas y carga CSV si la tabla está vacía.
+- soundwave.db : base de datos existente en la raíz del proyecto.
+
+NOTA SOBRE LA DURACION
+CancionDAOjdbc busca c.duracion_seg / 60.0, por lo que Canciones.getDuracion() devuelve minutos decimales. La interfaz convierte ese valor a mm:ss para mostrarlo.
+
+Si la base de datos no abre, revisa que soundwave.db esté en la carpeta raíz del proyecto y que NetBeans ejecute el proyecto desde esa carpeta.
