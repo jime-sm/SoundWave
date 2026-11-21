@@ -1,9 +1,0 @@
-SoundWave - Usuarios (Corte 2)
-
-Abrir esta carpeta como proyecto Maven en Apache NetBeans (Archivo > Abrir proyecto). Ejecutar la clase SoundWave.java.
-
-La biblioteca musical original se conserva. En la cabecera aparece el nuevo botón Usuarios. Allí puedes registrar cuentas gratuitas o Premium, iniciar sesión, ver el perfil, listar usuarios y cerrar sesión.
-
-Los usuarios se guardan en la tabla usuario de soundwave.db, que ya existía en el proyecto. No elimines ese archivo.
-
-Nota académica: el almacenamiento de contraseñas sigue el esquema original del proyecto Corte 2 (texto plano). No es apto para uso real en producción sin hashing de contraseñas y controles adicionales.
